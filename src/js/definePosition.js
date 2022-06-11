@@ -2,7 +2,7 @@ export default function definePosition() {
   const goblined = document.querySelector('.goblined');
   let exId = 999;
   if (goblined) {
-    exId = goblined.getAttribute('id');
+    exId = +goblined.getAttribute('id');
     goblined.classList.remove('goblined');
   }
   const cells = document.querySelectorAll('.cell');
