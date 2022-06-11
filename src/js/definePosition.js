@@ -8,7 +8,7 @@ export default function definePosition() {
   const cells = document.querySelectorAll('.cell');
   const cellsArr = [...cells];
   let id = 0;
-  do id = Math.round(Math.random() * (cellsArr.length - 1));
+  do id = Math.floor(Math.random() * (cellsArr.length));
   while (id === exId);
   const cell = document.getElementById(id);
   cell.classList.add('goblined');
